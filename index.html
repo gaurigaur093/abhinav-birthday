@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Betu Ji ♡</title>
+<style>
+:root{
+  --pink:#f6a9c4;--rose:#d95788;--dark:#74344f;--light:#fff3f8;
+  --lilac:#e9d9ff;--cream:#fffafd;--shadow:0 18px 55px #a8426a18;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--dark);font-family:Georgia,"Times New Roman",serif;
+  background:radial-gradient(circle at 12% 12%,#ffe0ec 0,transparent 28%),
+  radial-gradient(circle at 88% 35%,#eadfff 0,transparent 27%),
+  linear-gradient(135deg,#fff9fc,#ffeaf2);overflow-x:hidden;
+}
+a{color:var(--rose);text-decoration:none}
+.wrap{width:min(1050px,92%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:20px 0;font:13px Arial,sans-serif}
+.brand{font:italic 21px Georgia,serif;color:var(--rose)}
+.navlinks{display:flex;gap:18px;flex-wrap:wrap}
+.hero{min-height:82vh;display:grid;place-items:center;text-align:center;position:relative;padding:55px 15px}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--rose)}
+h1{font-size:clamp(43px,8vw,88px);line-height:.98;font-weight:500;margin:18px 0;color:#793b58}
+h1 span{color:var(--rose);font-style:italic}
+.hero p{max-width:580px;margin:0 auto 25px;font:15px/1.8 Arial,sans-serif;color:#936277}
+.btn{border:0;border-radius:999px;padding:13px 23px;background:var(--rose);color:white;cursor:pointer;font:14px Arial,sans-serif;box-shadow:0 9px 24px #c94f7c30;transition:.2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px #c94f7c50}
+.btn.secondary{background:#fff;color:var(--rose);border:1px solid #f0b8cd}
+.tiny{font:12px Arial,sans-serif;color:#a56e83;margin-top:14px}
+.float{position:absolute;pointer-events:none;opacity:.7;animation:drift 6s ease-in-out infinite}
+.f1{left:8%;top:20%;font-size:34px}.f2{right:10%;top:25%;font-size:27px;animation-delay:1s}
+.f3{right:18%;bottom:13%;font-size:38px;animation-delay:2s}.anime-star{left:17%;bottom:20%;font-size:28px;animation-delay:1.5s}
+@keyframes drift{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-17px) rotate(10deg)}}
+section{padding:68px 0}
+.head{text-align:center;margin-bottom:32px}
+.head h2{font-size:clamp(30px,5vw,46px);font-weight:500;margin:10px 0}
+.head p{font:14px/1.7 Arial,sans-serif;color:#95677a}
+.panel{max-width:780px;margin:auto;padding:clamp(24px,5vw,46px);background:#fffdfd;border:1px solid #f5c6d8;border-radius:23px;box-shadow:var(--shadow);position:relative}
+.panel p{font:15px/1.9 Arial,sans-serif;color:#795568}
+.signature{font:italic 23px Georgia,serif!important;color:var(--rose)!important;margin-top:22px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.photo{background:white;padding:10px 10px 16px;border-radius:12px;box-shadow:var(--shadow);transform:rotate(-1deg)}
+.photo:nth-child(2){transform:rotate(1.4deg)}.photo:nth-child(3){transform:rotate(-.5deg)}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:7px;background:#fbe1ea}
+.photo p{text-align:center;margin:11px 0 0;font:italic 15px Georgia,serif;color:#9b5c76}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:820px;margin:auto}
+.reason{background:#fffafd;border:1px solid #f7d0dd;padding:19px;border-radius:16px;font:14px/1.6 Arial,sans-serif}
+.reason b{display:block;color:var(--rose);font:italic 19px Georgia,serif;margin-bottom:5px}
+.countbox{max-width:700px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.time{background:#fffafd;border:1px solid #f4c7d8;border-radius:17px;padding:20px 8px;text-align:center;box-shadow:var(--shadow)}
+.time strong{display:block;font-size:clamp(28px,5vw,43px);font-weight:500;color:var(--rose)}
+.time span{font:11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#98677c}
+.note{text-align:center;font:14px/1.7 Arial,sans-serif;color:#95677a;margin:18px auto 0}
+.envelope-area{text-align:center}
+.envelope{width:210px;height:140px;margin:24px auto 18px;position:relative;cursor:pointer;perspective:800px}
+.env-body{position:absolute;inset:0;background:#f4a8c2;border-radius:8px;box-shadow:0 12px 25px #b54f7626}
+.env-body:before,.env-body:after{content:"";position:absolute;bottom:0;width:0;height:0;border-style:solid}
+.env-body:before{left:0;border-width:70px 105px 0 0;border-color:#f9c3d4 transparent transparent transparent}
+.env-body:after{right:0;border-width:70px 0 0 105px;border-color:#eda0ba transparent transparent transparent}
+.flap{position:absolute;top:0;left:0;width:0;height:0;border-left:105px solid transparent;border-right:105px solid transparent;border-top:85px solid #e985a8;transform-origin:top;transition:transform .7s;z-index:3}
+.letter-mini{position:absolute;left:15px;right:15px;bottom:8px;height:108px;background:#fffafc;border-radius:6px;z-index:2;transition:transform .7s;display:grid;place-items:center;color:var(--rose);font-size:27px}
+.envelope.open .flap{transform:rotateX(180deg);z-index:1}
+.envelope.open .letter-mini{transform:translateY(-76px)}
+.hidden-message{display:none;max-width:700px;margin:25px auto 0}
+.hidden-message.show{display:block;animation:reveal .7s ease}
+@keyframes reveal{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.future{text-align:center;background:#fff7fa;border:1px solid #f7d0dd;border-radius:22px;padding:34px 22px;max-width:760px;margin:auto}
+.future p{font:15px/1.8 Arial,sans-serif;color:#87596c}
+footer{text-align:center;padding:35px 15px 55px;color:#a56e83;font:13px Arial,sans-serif}
+.heart-pop{position:fixed;z-index:20;pointer-events:none;animation:pop 2.2s ease-out forwards}
+@keyframes pop{0%{opacity:1;transform:translateY(0) scale(.7)}100%{opacity:0;transform:translateY(-170px) scale(1.5) rotate(25deg)}}
+.music-row{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+input[type=file]{max-width:220px;font:12px Arial,sans-serif;color:#936277}
+@media(max-width:700px){nav{align-items:flex-start;flex-direction:column}.gallery{grid-template-columns:1fr;max-width:390px;margin:auto;gap:22px}.grid{grid-template-columns:1fr}.hero{min-height:74vh}.countbox{gap:7px}.time{padding:15px 4px}.time span{font-size:9px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="brand">a little universe for my Abhinav ji ♡</div>
+    <div class="navlinks"><a href="#letter">My letter</a><a href="#memories">Memories</a><a href="#surprise">Surprise</a></div>
+  </nav>
+</div>
+
+<header class="hero">
+  <span class="float f1">♡</span><span class="float f2">✧</span><span class="float f3">♥</span><span class="float anime-star">✦</span>
+  <div>
+    <div class="eyebrow">A birthday wish from your favourite person</div>
+    <h1>Happy Birthday<br><span>mere betu ji</span> ❤️</h1>
+    <p>Abhinav, even when miles are between us, you still make my world feel warmer, softer and happier. This little website is made only for you.</p>
+    <button class="btn" onclick="openSurprise()">Open your surprise ♡</button>
+    <div class="tiny" id="heroHint">A tiny website, with a whole lot of love.</div>
+    <div class="music-row">
+      <button class="btn secondary" id="musicBtn" onclick="toggleMusic()">♫ Play our song</button>
+      <audio id="song" src="music/birthday1.mp3" loop></audio>
+    </div>
+  </div>
+</header>
+
+<section id="countdown">
+  <div class="head"><div class="eyebrow">The day we celebrate you</div><h2>Birthday countdown ♡</h2><p>Counting down to your special day.</p></div>
+  <div class="countbox">
+    <div class="time"><strong id="days">00</strong><span>Days</span></div>
+    <div class="time"><strong id="hours">00</strong><span>Hours</span></div>
+    <div class="time"><strong id="minutes">00</strong><span>Minutes</span></div>
+    <div class="time"><strong id="seconds">00</strong><span>Seconds</span></div>
+  </div>
+  <p class="note" id="countNote">The countdown is set for 12 November 2026. You can change the date in the code if needed.</p>
+</section>
+
+<section id="letter">
+  <div class="head"><div class="eyebrow">From my heart</div><h2>A letter for you</h2><p>Some feelings deserve their own little page.</p></div>
+  <div class="panel">
+    <p>My dear Abhinav ji,</p>
+    <p>Happy Birthday mere betu ji! ❤️ I wish I could be right there beside you today, celebrating, laughing and making memories together. Since I can't be there in person, I made this little corner of the internet just for you.</p>
+    <p>Thank you for being part of my days and for making even ordinary moments feel special. I hope this new year of your life brings you happiness, confidence, good health and everything you've been working towards.</p>
+    <p>No matter how many kilometres are between us today, I'm cheering for you from here. I hope you always remember how special you are to me.</p>
+    <p class="signature">Happy birthday, my favourite person. ♡</p>
+    <p><i>P.S. This page is small, but all the love behind it is real.</i></p>
+  </div>
+</section>
+
+<section id="memories">
+  <div class="head"><div class="eyebrow">Little moments, big feelings</div><h2>Our memory lane</h2></div>
+  <div class="wrap gallery">
+
+    <div class="photo"><img src="photos/photo1.jpg" alt="Our memory two"><p>A memory I keep close ♡</p></div>
+  </div>
+</section>
+
+<section id="reasons">
+  <div class="head"><div class="eyebrow">A little list for you</div><h2>Reasons you're special</h2></div>
+  <div class="grid">
+    <div class="reason"><b>01 · Your smile ✧</b>It can make an ordinary day feel brighter.</div>
+    <div class="reason"><b>02 · Your ambition ♡</b>I love seeing you work towards your dreams.</div>
+    <div class="reason"><b>03 · Our conversations</b>Even simple talks become favourite moments.</div>
+    <div class="reason"><b>04 · The little things</b>It's the small gestures that mean so much.</div>
+    <div class="reason"><b>05 · Your presence</b>You make distance feel a little less distant.</div>
+    <div class="reason"><b>06 · Simply you ♥</b>There are a hundred more reasons, and counting.</div>
+  </div>
+</section>
+
+<section id="surprise">
+  <div class="head"><div class="eyebrow">One last surprise</div><h2>Open your little letter 💌</h2><p>Tap the envelope to reveal a hidden message.</p></div>
+  <div class="envelope-area">
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open surprise envelope" onclick="openEnvelope()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openEnvelope()}">
+      <div class="env-body"></div><div class="letter-mini">♡</div><div class="flap"></div>
+    </div>
+    <button class="btn" onclick="openEnvelope()">Open my surprise ♡</button>
+    <div class="hidden-message panel" id="hiddenMessage">
+      <div style="font-size:30px;color:#d95788">To my betu ji ♡</div>
+      <p>Distance can keep us in different places, but it cannot take away the happiness of having you in my life. Keep smiling, keep chasing your dreams, and save a little space for all the memories still waiting for us.</p>
+      <p class="signature">I’m always with you. Happy Birthday meri heartbeat❤️</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="future">
+    <div style="font-size:38px;color:#d96b91">✧ ♡ ✧</div>
+    <h2 style="font-weight:500">Until we're together again</h2>
+    <p>Today we're celebrating through a screen. Someday, we'll look back at this birthday and smile at how we made the distance feel smaller.</p>
+    <button class="btn" onclick="sendHearts()">Send you a little love ♡</button>
+  </div>
+</section>
+<footer>Made with lots of love, just for janu ji · ♡</footer>
+
+<script>
+// Birthday target: 12 November 2026, local time. Change this date if needed.
+const birthday = new Date(2026, 10, 12, 0, 0, 0);
+function updateCountdown(){
+  const now = new Date();
+  let diff = birthday - now;
+  if(diff <= 0){
+    document.getElementById('countNote').textContent = "It's your special day! Happy Birthday betuu! ❤️";
+    diff = 0;
+  }
+  const d = Math.floor(diff / 86400000);
+  const h = Math.floor((diff % 86400000) / 3600000);
+  const m = Math.floor((diff % 3600000) / 60000);
+  const s = Math.floor((diff % 60000) / 1000);
+  document.getElementById('days').textContent = String(d).padStart(2,'0');
+  document.getElementById('hours').textContent = String(h).padStart(2,'0');
+  document.getElementById('minutes').textContent = String(m).padStart(2,'0');
+  document.getElementById('seconds').textContent = String(s).padStart(2,'0');
+}
+updateCountdown(); setInterval(updateCountdown,1000);
+
+function openSurprise(){
+  document.getElementById('heroHint').textContent = "Surprise! You are loved more than this little website can say. ♡";
+  document.getElementById('letter').scrollIntoView({behavior:'smooth'});
+  sendHearts();
+}
+function openEnvelope(){
+  document.getElementById('envelope').classList.add('open');
+  document.getElementById('hiddenMessage').classList.add('show');
+  sendHearts();
+}
+function sendHearts(){
+  const symbols=['♡','♥','💕','💗','✧'];
+  for(let i=0;i<18;i++){
+    const el=document.createElement('span');
+    el.className='heart-pop';el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    el.style.left=(5+Math.random()*90)+'vw';el.style.top=(55+Math.random()*35)+'vh';
+    el.style.fontSize=(18+Math.random()*22)+'px';document.body.appendChild(el);
+    setTimeout(()=>el.remove(),2300);
+  }
+}
+// The page does not include copyrighted music. Choose an audio file you have permission to use.
+const audio=document.getElementById('song');
+const musicBtn=document.getElementById('musicBtn');
+document.getElementById('audioFile').addEventListener('change',function(){
+  if(this.files && this.files[0]){
+    audio.src=URL.createObjectURL(this.files[0]);
+    musicBtn.textContent='♫ Play our song';
+    musicBtn.disabled=false;
+  }
+});
+async function toggleMusic(){
+  if(!audio.src){alert('First choose an audio file using “Choose your own audio”.');return;}
+  if(audio.paused){
+    try{await audio.play();musicBtn.textContent='Ⅱ Pause music';}
+    catch(e){alert('Audio could not be played. Please choose another audio file.');}
+  }else{audio.pause();musicBtn.textContent='♫ Play our song';}
+}
+</script>
+</body>
+</html>
